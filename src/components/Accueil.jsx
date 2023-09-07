@@ -6,8 +6,8 @@ import logoSrc from '../../images/LOGO.png';
 
 export default function Accueil() {
   return (
-   <>
-    
-   </>
+<>
+  
+</>
   );
 }
