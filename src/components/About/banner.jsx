@@ -6,9 +6,6 @@ export default function Banner() {
   return (
     <div>
       <Header imgSrc={Imgsrc} showHeaderText={false} /> {/* Pass Imgsrc as a prop */}
-      <div>
-      
-      </div>
     </div>
   );
 }
