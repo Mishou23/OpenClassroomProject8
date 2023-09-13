@@ -5,7 +5,7 @@ import './index.css'
 export default Error= () => {
     return (
      <>
-        <Header showHeaderDiv={false}/>
+        <Header showHeaderDiv={false} />
         <ErrorPage />
         <Footer />
         </>

@@ -6,7 +6,7 @@ import './index.css';
 export default function Home() {
   return (
     <>
-      <Header showHeaderText={true} />
+      <Header showHeaderText={true} showHeaderDiv={true} />
       <Cards />
       <Footer/>
     </>
