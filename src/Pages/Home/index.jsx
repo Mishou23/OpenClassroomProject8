@@ -1,5 +1,6 @@
 import Header from '../../components/Header/index';
 import Cards from '../../components/Cards/index';
+import Footer from '../../components/Cards/footer'
 import './index.css';
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <Header showHeaderText={true} />
       <Cards />
+      <Footer/>
     </>
   );
 }
