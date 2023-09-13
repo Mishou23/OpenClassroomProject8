@@ -5,7 +5,7 @@ import './index.css';
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header showHeaderText={true} />
       <Cards />
     </>
   );
