@@ -21,13 +21,13 @@ export default function Header(props) {
           </li>
         </ul>
       </div>
-      <div className="header">
+     {props.showHeaderDiv &&  <div className="header">
         <div className="imageContainer">
         {props.showHeaderText && <h1 className="header-text">Chez vous, partout et ailleurs</h1>}
           <div className="imageOverlay"></div>
           <img src={imgSrc} alt="Image Description" className="header-img" />
         </div>
-      </div>
+      </div>}
     </div>
   );
 }

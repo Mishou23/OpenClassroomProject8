@@ -16,7 +16,8 @@
 }
 
 .dropdown {
-  margin: 15px;
+  margin-top: 5px;
+  padding: 0 126px;
 }
 
 .dropdown h1 {
@@ -44,6 +45,7 @@
 
 .open .list {
   opacity: 1; /* Show when open */
+  margin-bottom: 20px;
   max-height: 500px; /* Adjust to a suitable value, should be greater than the content height */
   transform: translateY(0); /* End position at translateY(0) for open state */
   transition: max-height 0.5s ease, transform 0.5s ease; /* Transition properties for open state */
