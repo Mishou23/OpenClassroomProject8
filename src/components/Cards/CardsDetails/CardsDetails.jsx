@@ -66,6 +66,13 @@ export default function CardsDetails() {
         <div className='location'>
         <p>{selectedData.location}</p>
         </div>
+        <div className='tags'>
+        {selectedData.tags.map((tag, index) => (
+        <div className="name" key={index}>
+         <div>{tag}</div>
+        </div>
+        ))}
+        </div>
         <div className="imageContainer">
           <Link to="/">Back to All Cards</Link>
         </div>
