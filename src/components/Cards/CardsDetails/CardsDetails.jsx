@@ -45,14 +45,14 @@ export default function CardsDetails() {
         <div className="imageControls">
           {/* SVG icons for previous and next */}
           <div
-            className="controlButtonL"
+            className="controlButton"
             onClick={headerProps.imageSliderProps.onPrevClick}
             disabled={currentImageIndex === 0}
           >
             <img src={LeftChevronIcon} alt="Previous" />
           </div>
           <div
-            className="controlButtonR"
+            className="controlButton"
             onClick={headerProps.imageSliderProps.onNextClick}
             disabled={currentImageIndex === selectedData.pictures.length - 1}
           >
@@ -60,6 +60,7 @@ export default function CardsDetails() {
           </div>
         </div>
         <div className='airbnbContent'>
+        <div className='contents'>
         <div className='airbnbName'>
           <h1>{selectedData.title}</h1>
         </div>
@@ -73,11 +74,22 @@ export default function CardsDetails() {
         </div>
         ))}
         </div>
-        <div className="imageContainer">
-          <Link to="/">Back to All Cards</Link>
         </div>
+       <div className='host'>
+       <div className='identity'>
+       <div className='name'>
+          <p>{selectedData.host.name}</p>
+        </div>
+        <div className='photo'>
+          <img src={selectedData.host.picture}></img>
+        </div>
+       </div>
+       </div>
         </div>
       </div>
+      <div className="imageContainer">
+          <Link to="/">Back to All Cards</Link>
+        </div>
     </div>
   );
 }

@@ -71,7 +71,7 @@ ul {
     display: flex;
     left: 43px;
     justify-content: space-between;
-    width: 90%;
+    width: 93%;
     align-items: center;
   }
   .imageControls img {
@@ -104,4 +104,30 @@ font-weight:500;
     border-radius: 10px;
     font-size: 14px;
    font-family: 'montserrat';
+}
+
+.airbnbContent{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.identity{
+  display: flex;
+  position:relative;
+  left: 11px;
+}
+.photo{
+  position: relative;
+  top: -6px;
+}
+.photo img{
+  border-radius: 50%;
+  width: 50px;
+}
+.identity .name p{
+  color: rgba(255, 96, 96, 1);
+  font-size: 18px;
+  font-family: 'montserrat';
+  font-weight: 500;
+  padding-top: 2px;
 }
