@@ -113,8 +113,7 @@ font-weight:500;
 }
 .identity{
   display: flex;
-  position:relative;
-  left: 11px;
+  gap: 10px;
 }
 .photo{
   position: relative;
