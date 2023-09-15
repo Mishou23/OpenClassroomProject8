@@ -41,7 +41,7 @@ export default function CardsDetails() {
 
   return (
     <div>
-      <Header {...headerProps} />
+      <Header {...headerProps} hideOverlay={false} />
       <div className="header">
         <div className="imageControls">
           {/* SVG icons for previous and next */}

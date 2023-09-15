@@ -70,8 +70,8 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha (4th value) for darkness */
-  z-index: 1; /* Ensure the overlay is on top of the image */
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: 1; 
   border-radius: 25px;
 }
 .imageContainer h1{
