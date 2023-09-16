@@ -1,23 +1,21 @@
-import React, { useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import Header from '../../Header/index';
-import Footer from '../footer'
-
+import React from 'react';
+import { useParams } from 'react-router-dom';
 import './style.css';
 import Data from '../../../logements';
+import Header from '../../Header/index'
 
 // Import your SVG icons
 import LeftChevronIcon from '../../../../icons/left-chevron.svg';
 import RightChevronIcon from '../../../../icons/right-chevron.svg';
 
-export default function CardsDetails() {
+export default function Slideshow() {
   const { id } = useParams(); // Get the ID from the URL
 
   // Find the data object with the matching ID
   const selectedData = Data.find(item => item.id === id);
 
   // Create state to track the current image index
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
   // Define the props for the Header component
   const headerProps = {
@@ -42,7 +40,7 @@ export default function CardsDetails() {
 
   return (
     <div>
-   
+       <Header {...headerProps} hideOverlay={false} />
       <div className="header">
         <div className="imageControls">
           {/* SVG icons for previous and next */}
@@ -61,39 +59,7 @@ export default function CardsDetails() {
             <img src={RightChevronIcon} alt="Next" />
           </div>
         </div>
-        <div className='airbnbContent'>
-        <div className='contents'>
-        <div className='airbnbName'>
-          <h1>{selectedData.title}</h1>
-        </div>
-        <div className='location'>
-        <p>{selectedData.location}</p>
-        </div>
-        <div className='tags'>
-        {selectedData.tags.map((tag, index) => (
-        <div className="name" key={index}>
-         <div>{tag}</div>
-        </div>
-        ))}
-        </div>
-        </div>
-       <div className='host'>
-       <div className='identity'>
-       <div className='name'>
-          <p>{selectedData.host.name}</p>
-        </div>
-        <div className='photo'>
-          <img src={selectedData.host.picture}></img>
-        </div>
-       </div>
-       </div>
-        </div>
       </div>
-      <div className="imageContainer">
-          <Link to="/">Back to All Cards</Link>
-        </div>
-        
     </div>
-
   );
 }
