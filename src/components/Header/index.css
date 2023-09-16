@@ -45,6 +45,7 @@ ul {
   width: 100%;
   max-width: 100%; /* To ensure the image doesn't exceed its container */
   padding: 25px 60px;
+  height: 100%;
 }
 
 .imageContainer {

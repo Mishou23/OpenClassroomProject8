@@ -12,7 +12,7 @@ export default function Airbnb() {
 
   return (
     <div>
-      <div className="header">
+      <div className="airbnbContainer">
         <div className='airbnbContent'>
           <div className='contents'>
             <div className='airbnbName'>

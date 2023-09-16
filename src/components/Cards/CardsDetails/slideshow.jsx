@@ -1,8 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import './style.css';
+import './index.css';
 import Data from '../../../logements';
-import Header from '../../Header/index'
 
 // Import your SVG icons
 import LeftChevronIcon from '../../../../icons/left-chevron.svg';
@@ -17,47 +16,42 @@ export default function Slideshow() {
   // Create state to track the current image index
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
-  // Define the props for the Header component
-  const headerProps = {
-    showHeaderDiv: true, // Always show the header div
-    showHeaderText: false, // Conditionally show the header text based on selectedData
-    imgSrc: selectedData ? selectedData.pictures[currentImageIndex] : '', // Provide the image source
-    imageSliderProps: {
-      images: selectedData ? selectedData.pictures : [], // Array of images to display
-      currentIndex: currentImageIndex, // Current image index
-      onPrevClick: () => {
-        if (currentImageIndex > 0) {
-          setCurrentImageIndex(currentImageIndex - 1);
-        }
-      },
-      onNextClick: () => {
-        if (currentImageIndex < (selectedData ? selectedData.pictures.length - 1 : 0)) {
-          setCurrentImageIndex(currentImageIndex + 1);
-        }
-      },
-    },
+  // Function to handle navigation
+  const handleNavigation = (direction) => {
+    if (direction === 'prev') {
+      if (currentImageIndex > 0) {
+        setCurrentImageIndex(currentImageIndex - 1);
+      }
+    } else if (direction === 'next') {
+      if (currentImageIndex < (selectedData ? selectedData.pictures.length - 1 : 0)) {
+        setCurrentImageIndex(currentImageIndex + 1);
+      }
+    }
   };
 
   return (
-    <div>
-       <Header {...headerProps} hideOverlay={false} />
-      <div className="header">
-        <div className="imageControls">
-          {/* SVG icons for previous and next */}
-          <div
-            className="controlButton"
-            onClick={headerProps.imageSliderProps.onPrevClick}
-            disabled={currentImageIndex === 0}
-          >
-            <img src={LeftChevronIcon} alt="Previous" />
-          </div>
-          <div
-            className="controlButton"
-            onClick={headerProps.imageSliderProps.onNextClick}
-            disabled={currentImageIndex === selectedData.pictures.length - 1}
-          >
-            <img src={RightChevronIcon} alt="Next" />
-          </div>
+    <div className="slideContainer">
+      <img
+        src={selectedData ? selectedData.pictures[currentImageIndex] : ''}
+        alt="Image Description"
+        className="slideImage"
+      />
+
+      <div className="imageControls">
+        <div
+          className="controlButtonL"
+          onClick={() => handleNavigation('prev')}
+          disabled={currentImageIndex === 0}
+        >
+          <img src={LeftChevronIcon} alt="Previous" className="chevronIcon" />
+        </div>
+        {/* Button to navigate to the next image */}
+        <div
+          className="controlButtonR"
+          onClick={() => handleNavigation('next')}
+          disabled={currentImageIndex === selectedData.pictures.length - 1}
+        >
+          <img src={RightChevronIcon} alt="Next" className="chevronIcon"/>
         </div>
       </div>
     </div>

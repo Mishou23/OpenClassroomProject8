@@ -95,16 +95,7 @@
         display: block;
     }
 
-
-    .content p {
-        color: white;
-        font-size: 20px;
-    }
-    .logo-white img {
-        width: 26%;
-    }
-
-    .content p {
+      .content p {
         color: white;
         font-size: 12px;
     }

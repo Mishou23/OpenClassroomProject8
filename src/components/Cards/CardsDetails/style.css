@@ -40,10 +40,10 @@ ul {
   text-decoration: underline;
 }
 
-.header {
+.airbnbContainer {
     width: 100%;
-    max-width: 100%; /* To ensure the image doesn't exceed its container */
-    padding: 25px 60px;
+    max-width: 100%; 
+    padding: 30px 60px;
   }
   
   .imageContainer {
@@ -63,19 +63,7 @@ ul {
     height: 100%; /* Maintain image aspect ratio */
   }
  
-  .imageControls{
-    position: absolute;
-    top: -182px;
-    display: flex;
-    left: 43px;
-    justify-content: space-between;
-    width: 93%;
-    align-items: center;
-  }
-  .imageControls img {
-    width: 96px;
-    height: 100%;
-}
+ 
 .airbnbName h1 {
 font-size: 36px;
 color: rgba(255, 96, 96, 1);
