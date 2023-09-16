@@ -1,0 +1,33 @@
+.footer {
+    background-color: black;
+    padding-top: 55px;
+    padding-bottom: 20px;
+    margin-top: 28px;
+}
+.content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.logo-white img {
+    width: 9%;
+}
+
+
+/* --------------------------------------------------Version Smartphone ----------------------------------------------------------------------------------------------- */
+@media (max-width:768px) and (min-width:320px) {
+   
+    .content p {
+        color: white;
+        font-size: 20px;
+    }
+    .logo-white img {
+        width: 26%;
+    }
+    .content p {
+        color: white;
+        font-size: 12px;
+    }
+}

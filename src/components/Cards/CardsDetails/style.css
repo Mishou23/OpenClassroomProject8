@@ -1,0 +1,130 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.logo{
+  padding-left: 60px;
+}
+
+.logo img{
+  width: 64%;
+}
+
+ul {
+
+  display: flex;
+  justify-content: space-between;
+  gap: 57px;
+  list-style-type: none;
+  
+}
+ .nav-link{
+  color:rgba(255, 96, 96, 1);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "montserrat";
+}
+.nav-link:hover{
+  text-decoration: underline;
+}
+
+.header {
+    width: 100%;
+    max-width: 100%; /* To ensure the image doesn't exceed its container */
+    padding: 25px 60px;
+  }
+  
+  .imageContainer {
+    width: 100%;
+    max-width: 100%;
+    height: 200px; /* Remove fixed height to make it responsive */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center the content */
+  }
+  
+  .imageContainer img {
+    position: relative;
+    object-fit: cover;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%; /* Maintain image aspect ratio */
+  }
+ 
+  .imageControls{
+    position: absolute;
+    top: -182px;
+    display: flex;
+    left: 43px;
+    justify-content: space-between;
+    width: 93%;
+    align-items: center;
+  }
+  .imageControls img {
+    width: 96px;
+    height: 100%;
+}
+.airbnbName h1 {
+font-size: 36px;
+color: rgba(255, 96, 96, 1);
+font-family: 'montserrat';
+font-weight:500;
+}
+.location p{
+  font-size: 18px;
+  font-family: 'montserrat';
+  color: rgba(255, 96, 96, 1);
+  padding-top: 5px;
+  font-weight: 500;
+}
+.tags{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  gap: 10px;
+}
+.tags .name{
+  padding: 5px 30px;
+    background-color: rgba(255, 96, 96, 1);
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+   font-family: 'montserrat';
+}
+
+.airbnbContent{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.identity{
+  display: flex;
+  gap: 10px;
+}
+.photo{
+  position: relative;
+  top: -6px;
+}
+.photo img{
+  border-radius: 50%;
+  width: 50px;
+}
+.identity .name p{
+  color: rgba(255, 96, 96, 1);
+  font-size: 18px;
+  font-family: 'montserrat';
+  font-weight: 500;
+  padding-top: 2px;
+}
