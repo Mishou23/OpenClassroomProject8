@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Header from '../../Header/index';
+import Footer from '../footer'
+
 import './style.css';
 import Data from '../../../logements';
 
