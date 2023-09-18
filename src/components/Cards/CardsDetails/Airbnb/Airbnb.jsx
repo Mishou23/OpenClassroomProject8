@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './style.css';
-import Data from '../../../logements';
+import Data from '../../../../logements';
 import { useParams } from 'react-router-dom';
 
 export default function Airbnb() {
@@ -40,9 +38,6 @@ export default function Airbnb() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="imageContainer">
-        <Link to="/">Back to All Cards</Link>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 import Header from '../Header/index'; 
 import Imgsrc from '../../../images/landscape.png';
 

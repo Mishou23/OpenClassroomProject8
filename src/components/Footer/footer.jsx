@@ -1,5 +1,5 @@
 import logoWhite from '../../../images/LOGO_white.png';
-import './style.css'
+import './style.scss'
 export default function Footer() {
     return (
 <div className="footer">

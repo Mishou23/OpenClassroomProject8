@@ -1,11 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import './index.css';
-import Data from '../../../logements';
+import './index.scss';
+import Data from '../../../../logements';
 
 // Import your SVG icons
-import LeftChevronIcon from '../../../../icons/left-chevron.svg';
-import RightChevronIcon from '../../../../icons/right-chevron.svg';
+import LeftChevronIcon from '../../../../../icons/left-chevron.svg';
+import RightChevronIcon from '../../../../../icons/right-chevron.svg';
 
 export default function Slideshow() {
   const { id } = useParams(); // Get the ID from the URL

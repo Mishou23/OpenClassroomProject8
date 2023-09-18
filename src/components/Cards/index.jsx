@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'; // Import Link from React Router
-import './index.css';
+import './index.scss';
 import Data from '../../logements';
 
 export default function Cards() {

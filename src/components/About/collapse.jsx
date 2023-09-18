@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.css';
+import './style.scss';
 
 export default function Collapse() {
   // State to track whether each dropdown is open or closed

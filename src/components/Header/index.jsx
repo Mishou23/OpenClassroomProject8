@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './index.scss';
 import { Link } from 'react-router-dom';
 import logoSrc from '../../../images/LOGO.png';
 import defaultImgSrc from '../../../images/IMG.png'; // Default image

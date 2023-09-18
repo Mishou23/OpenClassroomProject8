@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Home from './Pages/Home/index';
 import About from './Pages/About/index';
 import AirBnb from './Pages/Airbnb/airbnb'

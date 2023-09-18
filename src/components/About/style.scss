@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/montserrat');
+
 
 * {
   box-sizing: border-box;
@@ -18,11 +18,11 @@
 .dropdown {
   margin-top: 5px;
   padding: 0 126px;
-}
 
-.dropdown h1 {
-  font-size: 24px;
-  color: white;
+  h1 {
+    font-size: 24px;
+    color: white;
+  }
 }
 
 .title .chevron {
@@ -76,16 +76,18 @@
   cursor: pointer;
   background-color: #333;
   color: #fff;
-}
 
-.title h1 {
-  margin: 0;
-}
+  h1 {
+    margin: 0;
+  }
 
-.chevron {
-  transform: rotate(0deg); /* Initial state */
-}
+  &.chevron {
+    transform: rotate(0deg); /* Initial state */
+  }
 
-.open .chevron {
-  transform: rotate(180deg); /* Rotate when open */
+  &.open {
+    .chevron {
+      transform: rotate(180deg); /* Rotate when open */
+    }
+  }
 }
