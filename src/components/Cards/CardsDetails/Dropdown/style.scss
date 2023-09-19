@@ -3,26 +3,56 @@
     grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
     gap: 20px; /* Add some gap between columns */
     padding: 0 60px;
-  
+    
+    }
     .drop-des,
     .drop-equip {
-      padding: 10px 30px;
+      padding: 10px 10px;
       background-color: rgba(255, 96, 96, 1);
       color: white;
-      border-radius: 10px;
+      border-radius: 5px;
       font-size: 14px;
       font-family: 'montserrat';
       display: inline-block;
+      width: 100%;
     }
   
-    .headline {
-      display: flex;
-      align-items: end;
-    }
+/* Dropdown section headline */
+.headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  
+}
   
     .equipList .name,
     .des-text {
       color: rgba(255, 96, 96, 1);
     }
-  }
   
+  /* Description text */
+.des-text, .equip-text {
+  display: none;
+
+  &.active {
+    display: block;
+    background-color: rgba(246, 246, 246, 1);
+    padding: 20px 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+}
+  .name {
+    /* Equipment item style */
+    padding-bottom: 5px;
+    padding-left: 10px;
+  }
+/* Define a CSS class for rotating the chevron */
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease; /* Add a transition for smooth rotation */
+}
+
+
