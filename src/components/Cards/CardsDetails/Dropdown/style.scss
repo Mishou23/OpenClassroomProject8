@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 .Dropdowns {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
@@ -7,7 +10,7 @@
     }
     .drop-des,
     .drop-equip {
-      padding: 10px 10px;
+      padding: 10px 7px;
       background-color: rgba(255, 96, 96, 1);
       color: white;
       border-radius: 5px;
@@ -38,7 +41,10 @@
   &.active {
     display: block;
     background-color: rgba(246, 246, 246, 1);
-    padding: 20px 0;
+    padding-left: 15px;
+    padding-top: 20px;
+    height: 166px; /* Adjust the height as needed */
+    overflow: hidden; /* Hide any content that overflows the set height */
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
@@ -47,7 +53,6 @@
   .name {
     /* Equipment item style */
     padding-bottom: 5px;
-    padding-left: 10px;
   }
 /* Define a CSS class for rotating the chevron */
 .rotate {

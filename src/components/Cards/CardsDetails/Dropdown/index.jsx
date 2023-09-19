@@ -10,7 +10,7 @@ export default function Dropdown() {
   const selectedData = Data.find(item => item.id === id);
 
   // State to control the visibility and rotation of dropdown content
-  const [showDescription, setShowDescription] = useState(true);
+  const [showDescription, setShowDescription] = useState(false);
   const [showEquipments, setShowEquipments] = useState(false);
   const [rotateChevronDescription, setRotateChevronDescription] = useState(false);
   const [rotateChevronEquipments, setRotateChevronEquipments] = useState(false);
@@ -23,7 +23,6 @@ export default function Dropdown() {
             className={`headline ${showDescription ? 'active' : ''}`}
             onClick={() => {
               setShowDescription(!showDescription);
-              setShowEquipments(false);
               setRotateChevronDescription(!rotateChevronDescription); // Toggle rotation
               setRotateChevronEquipments(false); // Reset the other chevron
             }}
@@ -49,7 +48,6 @@ export default function Dropdown() {
             className={`headline ${showEquipments ? 'active' : ''}`}
             onClick={() => {
               setShowEquipments(!showEquipments);
-              setShowDescription(false);
               setRotateChevronEquipments(!rotateChevronEquipments); // Toggle rotation
               setRotateChevronDescription(false); // Reset the other chevron
             }}
