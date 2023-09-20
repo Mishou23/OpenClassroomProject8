@@ -12,6 +12,7 @@
     padding-left: 54px;
     padding-right: 54px;
     padding-top: 40px;
+    margin-top: 15px;
     padding-bottom: 37px;
     border-radius: 25px;
   }
@@ -35,23 +36,7 @@
     color: rgba(255, 255, 255, 1);
   }
   
-  .footer {
-    background-color: black;
-    padding-top: 55px;
-    padding-bottom: 20px;
-    margin-top: 28px;
   
-    .content {
-      display: flex;
-      text-align: center;
-      flex-direction: column;
-      gap: 30px;
-  
-      .logo-white {
-        img {
-          width: 9%;
-        }
-      }
   
       /* --------------------------------------------------Version Tablette ----------------------------------------------------------------------------------------------- */
       @media (max-width: 1024px) and (min-width: 768px) {
@@ -94,6 +79,5 @@
           font-size: 12px;
         }
       }
-    }
-  }
+   
   

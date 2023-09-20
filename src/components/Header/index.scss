@@ -16,7 +16,7 @@ $background-color_1: rgba(0, 0, 0, 0.3);
 .navbar {
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  width: 94%;
   padding-top: 25px;
   padding-bottom: 10px;
   align-items: center;
@@ -93,19 +93,32 @@ ul {
   z-index: 2;
   border-radius: 25px;
 }
+// ------------------------------------------------------------Version Tablette -------------------------------------------------------------------------------------------------------------------------------
+@media (max-width: 1025px) and (min-width: 768px) {
 
+  .imageContainer  {
+    h1{
+    font-size: 38px;}
+  }
+}
+
+
+// ------------------------------------------------------------Version Smartphone -----------------------------------------------------------------------------------------------------------------------------
 @media (max-width: 768px) and (min-width: 320px) {
+  .logo {
+    padding-left: 22px;
+}
   .nav-link {
-    font-size: 12px;
+    font-size: 17px;
+    white-space: nowrap;
   }
 
   .header {
     padding: 22px 18px;
   }
-
+ 
   .imageContainer {
-    height: 111px;
-
+    height: 150px !important; 
     h1 {
       position: absolute;
       font-size: 24px;

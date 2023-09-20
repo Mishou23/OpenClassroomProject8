@@ -4,7 +4,7 @@
   background-color: #000000;
   padding-top: 30px;
   padding-bottom: 20px;
-  margin-top: 28px;
+  margin-top: 40px;
 }
 
 .content {
@@ -18,23 +18,40 @@
       width: 9%;
     }
   }
+  .copyright  {
+    p{
+    color: white;
+    font-size: 20px;
+    padding-top: 5px;
+  }
+  }
 
-  // Version for Smartphones
+  // ------------------------------------------------- Version Tablette --------------------------------------------------------------------------
+  @media (max-width: 1025px) and (min-width: 768px) {
+   .logo-white  {
+    img {
+  width: 13%;
+     }
+   }
+  }
+  //---------------------------------------------------- Version for Smartphones -----------------------------------------------------------------------
   @media (max-width: 768px) and (min-width: 320px) {
-    p {
-      color: white;
-      font-size: 20px;
-    }
-
+ 
     .logo-white {
       img {
-        width: 26%;
+        width: 110px;
       }
     }
-
-    p {
+    .content {
+      gap: 13px;
+  }
+   .copyright {
+    p{
       color: white;
-      font-size: 12px;
+      font-size: 15px;
+      padding-top: 0px;
+
+    }
     }
   }
 }
