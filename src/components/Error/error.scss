@@ -11,9 +11,10 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 87px;
 
   .message {
-    padding-top: 60px;
+    padding: 60px 0;
 
     h1 {
       font-size: 288px;
@@ -41,4 +42,23 @@
       font-family: 'montserrat';
     }
   }
+}
+// ------------------------------------------------------------Version Smartphone -----------------------------------------------------------------------------------------------------------------------------
+@media (max-width: 768px) and (min-width: 320px) {
+  .errorContainer{
+    padding-top: 50px;
+  }
+  .errorContainer .message {
+    h1{
+    font-size: 155px;
+}
+  }
+  .errorContainer .description {
+    p{
+    font-size: 18px;
+  }
+}
+.errorContainer .home .homepage {
+  font-size: 14px;
+}
 }
