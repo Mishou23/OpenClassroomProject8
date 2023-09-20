@@ -26,7 +26,10 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  
+  width: 98%;
+  h3{
+    font-weight: 500;
+  }
 }
   
     .equipList .name,
@@ -59,5 +62,20 @@
   transform: rotate(180deg);
   transition: transform 0.3s ease; /* Add a transition for smooth rotation */
 }
+.chevron{
+  font-size: 22px;
+  position: relative;
+  bottom: -5px;
+}
+   /* --------------------------------------------------Version Smartphone ----------------------------------------------------------------------------------------------- */
+   @media (max-width: 768px) and (min-width: 320px) {
+    .Dropdowns {
+      padding-top: 56px;
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .drop-des, .drop-equip {
+      padding: 6px 7px;
+    }
+  
 
-
+   }

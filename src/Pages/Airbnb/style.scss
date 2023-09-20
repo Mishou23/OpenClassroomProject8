@@ -83,3 +83,27 @@
   font-weight: 500;
   padding-top: 2px;
 }
+.star-rating {
+  display: flex;
+}
+
+ /* --------------------------------------------------Version Smartphone ----------------------------------------------------------------------------------------------- */
+ @media (max-width: 768px) and (min-width: 320px) {
+  
+// .star-rating {
+//   display: flex;
+//   position: relative;
+//   right: 439px;
+// }
+
+// .star {
+// font-size: 24px;
+// color:rgba(255, 96, 96, 1); 
+// margin-right: 4px; 
+// }
+
+// .star.unfilled {
+// color: rgba(227, 227, 227, 1); 
+// }
+
+ }
