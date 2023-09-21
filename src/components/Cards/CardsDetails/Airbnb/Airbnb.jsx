@@ -3,9 +3,7 @@ import Data from '../../../../logements';
 import { useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
-import { faStar as regularStar } from '@fortawesome/free-regular-svg-icons';
 
-// Define the StarRating component once
 const StarRating = ({ rating }) => {
   const maxRating = 5; // Maximum rating possible
 
@@ -14,10 +12,11 @@ const StarRating = ({ rating }) => {
 
   // Add filled stars
   for (let i = 0; i < maxRating; i++) {
-    const starIcon = i < rating ? solidStar : regularStar;
+    const starIcon = i < rating ? solidStar : solidStar;
+    const starColor = i < rating ? 'rgba(255, 96, 96, 1)' : 'rgba(227, 227, 227, 1)';
     stars.push(
       <span key={i} className="star">
-        <FontAwesomeIcon icon={starIcon} />
+        <FontAwesomeIcon icon={starIcon} style={{ color: starColor }} />
       </span>
     );
   }
@@ -60,7 +59,7 @@ export default function Airbnb() {
               </div>
             </div>
             <div className='ratings'>
-                <StarRating rating={selectedData.host.rating} />
+                <StarRating rating={selectedData.rating} />
                 {console.log(selectedData.rating)}
               </div>
           </div>

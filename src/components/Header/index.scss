@@ -113,7 +113,9 @@ ul {
     white-space: nowrap;
     text-transform: uppercase;
   }
-
+  ul {
+    gap: 26px;
+  }
   .header {
     padding: 22px 18px;
   }
