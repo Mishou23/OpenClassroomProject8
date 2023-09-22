@@ -32,7 +32,8 @@ export default function Airbnb() {
 
   return (
     <div>
-      <div className="airbnbContainer">
+    <div className='main-container'>
+    <div className="airbnbContainer">
         <div className='airbnbContent'>
           <div className='contents'>
             <div className='airbnbName'>
@@ -50,7 +51,8 @@ export default function Airbnb() {
             </div>
           </div>
           <div className='host'>
-            <div className='identity'>
+          <div className='pseudo'>
+          <div className='identity'>
               <div className='name'>
                 <p>{selectedData.host.name}</p>
               </div>
@@ -63,8 +65,12 @@ export default function Airbnb() {
                 {console.log(selectedData.rating)}
               </div>
           </div>
+          
+          </div>
         </div>
       </div>
+    </div>
+     
     </div>
   );
 }

@@ -69,9 +69,15 @@
 }
    /* --------------------------------------------------Version Smartphone ----------------------------------------------------------------------------------------------- */
    @media (max-width: 768px) and (min-width: 320px) {
+    .slideContainer .imageControls {
+      left: -2px;
+      width: 100%;
+    }
     .Dropdowns {
-      padding-top: 56px;
+      padding-top: 10px;
     grid-template-columns: repeat(1, 1fr);
+    padding-left: 20px;
+    padding-right: 20px;
     }
     .drop-des, .drop-equip {
       padding: 6px 7px;
