@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
+/* Reset default styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-.container{
+
+/* Container for all dropdowns */
+.container {
   margin-bottom: -40px;
 }
+
 .dropdown .title {
   padding: 10px;
   background-color: rgba(255, 96, 96, 1);
@@ -15,60 +17,75 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: white; /* Text color */
 }
 
+.dropdown .title:hover {
+  background-color: rgba(200, 80, 80, 1);
+}
+
+/* Dropdown content container */
 .dropdown {
   padding: 0 126px;
-
-  h1 {
-    font-size: 24px;
-    color: white;
-  }
+  margin-bottom: 20px;
 }
 
+/* Dropdown title text */
+h1 {
+  font-size: 24px;
+  color: white;
+}
+
+/* Chevron icon */
 .title .chevron {
   font-size: 23px;
   display: flex;
-  transition: transform 3s ease; /* Smoother transition for chevron */
+  transition: transform 0.3s ease; /* Smoother transition for chevron */
+  position: relative;
+  bottom: -5px;
 }
 
-.dropdown .list {
-  padding: 15px;
-  background-color: rgba(246, 246, 246, 1);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  opacity: 0; /* Hidden by default */
-  max-height: 0; /* Hidden by default */
-  overflow: hidden; /* Hide overflowing content */
-  transform: translateY(0); /* Initial position */
-  transition: max-height 0.5s ease, transform 0.5s ease; /* Transition properties */
+/* Chevron rotation when the dropdown is open */
+.title .chevron.open {
+  transform: rotate(180deg);
+}
+.chevron.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
 }
 
-.open .list {
-  opacity: 1; /* Show when open */
-  margin-bottom: 20px;
-  max-height: 500px; /* Adjust to a suitable value, should be greater than the content height */
-  transform: translateY(0); /* End position at translateY(0) for open state */
-  transition: max-height 0.5s ease, transform 0.5s ease; /* Transition properties for open state */
+
+/* Dropdown list (content) */
+.list {
+  display: block;
+  max-height: 0;
   overflow: hidden;
-  animation: scrollUpDown 3s ease; /* Apply keyframe animation */
+  background-color: rgba(246, 246, 246, 1);
+  padding-left: 15px;
+  padding-top: 0;
+  transition:
+    max-height 0.3s ease-in-out, /* Smooth height transition */
+    opacity 0.3s ease-in-out,
+    padding-top 0.3s ease-in-out;
 }
 
-@keyframes scrollUpDown {
-  0% {
-    transform: translateY(0px); /* Start position for keyframe animation */
-  }
-  100% {
-    transform: translateY(0px); /* End position for keyframe animation */
-  }
+.list.open {
+  max-height: 100%;
+  height: 66px;
+  opacity: 1;
+  padding-top: 20px;
 }
 
+/* Text in the dropdown content */
 .details p {
   color: rgba(255, 96, 96, 1);
   font-size: 18px;
   font-weight: 400;
 }
 
+/* Dropdown title container */
 .title {
   display: flex;
   align-items: center;
@@ -81,17 +98,8 @@
   h1 {
     margin: 0;
   }
-
-  &.chevron {
-    transform: rotate(0deg); /* Initial state */
-  }
-
-  &.open {
-    .chevron {
-      transform: rotate(180deg); /* Rotate when open */
-    }
-  }
 }
+
 //-----------------------------------------------------------------Version Smartphone ---------------------------------------------
 @media (max-width: 768px) and (min-width: 360px) {
   .dropdown {

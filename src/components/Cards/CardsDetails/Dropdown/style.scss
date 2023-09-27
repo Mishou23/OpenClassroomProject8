@@ -65,13 +65,15 @@
     padding-bottom: 5px;
   }
 
-.rotate {
+/* Rotate chevron when active */
+.chevron.rotate {
   transform: rotate(180deg);
-  transition: transform 0.3s ease;
 }
-.chevron{
-  font-size: 22px;
+
+.chevron {
+  font-size: 23px;
   position: relative;
+  transition: transform 0.3s ease;
   bottom: -5px;
 }
    /* --------------------------------------------------Version Smartphone ----------------------------------------------------------------------------------------------- */
