@@ -33,12 +33,7 @@
     color: rgba(255, 255, 255, 1);
   }
 
-  .ratings {
-   
-    .star {
-      margin-right: 5px;
-    }
-  }
+
 }
 
 /* Version Tablette */
@@ -85,17 +80,4 @@
     font-size: 12px;
   }
 
-  .slideContainer {
-    padding-left: 20px;
-    padding-right: 20px;
-    .imageControls {
-      .chevronIcon {
-        width: 87px;
-      }
-      left: 0px;
-      width: 0%;
-    }
-  }
-
-  
 }
