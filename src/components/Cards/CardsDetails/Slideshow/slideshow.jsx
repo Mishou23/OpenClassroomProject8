@@ -1,12 +1,10 @@
-import './index.scss';
 import React, { useState } from 'react';
-
-// Import your SVG icons
 import LeftChevronIcon from '../../../../../icons/left-chevron.svg';
 import RightChevronIcon from '../../../../../icons/right-chevron.svg';
+
 export default function Slideshow({ housingData }) {
   // Create state to track the current image index
-  const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // Function to handle navigation
   const handleNavigation = (direction) => {
@@ -21,6 +19,9 @@ export default function Slideshow({ housingData }) {
     }
   };
 
+  // Determine whether to show or hide chevrons based on the number of pictures
+  const showChevrons = housingData && housingData.pictures.length > 1;
+
   return (
     <div className="slideContainer">
       <img
@@ -29,7 +30,7 @@ export default function Slideshow({ housingData }) {
         className="slideImage"
       />
 
-      <div className="imageControls">
+      <div className={`imageControls ${showChevrons ? '' : 'hideChevrons'}`}>
         <div
           className="controlButtonL"
           onClick={() => handleNavigation('prev')}
