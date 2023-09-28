@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
-import Data from '../../../../logements';
-import { useParams } from 'react-router-dom';
-import './style.scss'; // Import your existing styles
+import './style.scss'; 
 
-export default function Dropdown() {
-  const { id } = useParams(); // Get the ID from the URL
-
-  // Find the data object with the matching ID
-  const selectedData = Data.find(item => item.id === id);
-
+export default function Dropdown({ housingData }) {
   // State to control the visibility and rotation of dropdown content
   const [showDescription, setShowDescription] = useState(false);
   const [showEquipments, setShowEquipments] = useState(false);
@@ -39,7 +32,7 @@ export default function Dropdown() {
           </div>
         </div>
         <div className={`des-text ${showDescription ? 'active' : ''}`}>
-          <p>{selectedData.description}</p>
+          <p>{housingData.description}</p> {/* Use housingData prop */}
         </div>
       </div>
       <div className="Dropdown">
@@ -65,7 +58,7 @@ export default function Dropdown() {
         </div>
         <div className={`equip-text ${showEquipments ? 'active' : ''}`}>
           <div className="equipList">
-            {selectedData.equipments.map((equip, index) => (
+            {housingData.equipments.map((equip, index) => (
               <div className="name" key={index}>
                 <div>{equip}</div>
               </div>

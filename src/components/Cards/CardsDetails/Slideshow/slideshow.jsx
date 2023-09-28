@@ -1,18 +1,10 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
 import './index.scss';
-import Data from '../../../../logements';
+import React, { useState } from 'react';
 
 // Import your SVG icons
 import LeftChevronIcon from '../../../../../icons/left-chevron.svg';
 import RightChevronIcon from '../../../../../icons/right-chevron.svg';
-
-export default function Slideshow() {
-  const { id } = useParams(); // Get the ID from the URL
-
-  // Find the data object with the matching ID
-  const selectedData = Data.find(item => item.id === id);
-
+export default function Slideshow({ housingData }) {
   // Create state to track the current image index
   const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
@@ -23,7 +15,7 @@ export default function Slideshow() {
         setCurrentImageIndex(currentImageIndex - 1);
       }
     } else if (direction === 'next') {
-      if (currentImageIndex < (selectedData ? selectedData.pictures.length - 1 : 0)) {
+      if (currentImageIndex < (housingData ? housingData.pictures.length - 1 : 0)) {
         setCurrentImageIndex(currentImageIndex + 1);
       }
     }
@@ -32,7 +24,7 @@ export default function Slideshow() {
   return (
     <div className="slideContainer">
       <img
-        src={selectedData ? selectedData.pictures[currentImageIndex] : ''}
+        src={housingData ? housingData.pictures[currentImageIndex] : ''}
         alt="Image Description"
         className="slideImage"
       />
@@ -49,9 +41,9 @@ export default function Slideshow() {
         <div
           className="controlButtonR"
           onClick={() => handleNavigation('next')}
-          disabled={currentImageIndex === selectedData.pictures.length - 1}
+          disabled={currentImageIndex === (housingData ? housingData.pictures.length - 1 : 0)}
         >
-          <img src={RightChevronIcon} alt="Next" className="chevronIcon"/>
+          <img src={RightChevronIcon} alt="Next" className="chevronIcon" />
         </div>
       </div>
     </div>
