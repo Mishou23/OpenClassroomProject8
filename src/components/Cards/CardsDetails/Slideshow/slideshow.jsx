@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import LeftChevronIcon from '../../../../../icons/left-chevron.svg';
 import RightChevronIcon from '../../../../../icons/right-chevron.svg';
-
+import './index.scss'
 export default function Slideshow({ housingData }) {
   // Create state to track the current image index
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -47,6 +47,12 @@ export default function Slideshow({ housingData }) {
           <img src={RightChevronIcon} alt="Next" className="chevronIcon" />
         </div>
       </div>
+      
+      {showChevrons && (
+        <div className="slideNumber">
+          {currentImageIndex + 1}/{housingData.pictures.length}
+        </div>
+      )}
     </div>
   );
 }
