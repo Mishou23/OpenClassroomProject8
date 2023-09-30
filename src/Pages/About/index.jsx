@@ -7,8 +7,10 @@ import Footer from '../../components/Footer/footer'
 export default function About() {
     return (
   <>
+  <div className='About-container'>
   <Banner />
   <Collapse />
+  </div>
   <Footer/>
   </>
     )

@@ -5,8 +5,10 @@ import './index.scss'
 export default Error= () => {
     return (
      <>
-        <Header showHeaderDiv={false} />
-        <ErrorPage />
+     <div className='headerContainer'>
+     <Header showHeaderDiv={false} />
+     <ErrorPage />
+     </div>
         <Footer />
         </>
     );

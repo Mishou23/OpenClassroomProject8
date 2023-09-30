@@ -26,7 +26,7 @@ export default function Collapse() {
   };
 
   return (
-    <div className='container'>
+    <div className='dropContainer'>
       <div className={`dropdown ${dropdown1Open ? 'open' : ''}`}>
         <div className='title' onClick={toggleDropdown1}>
           <h1>Fiabilité</h1>

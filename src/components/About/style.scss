@@ -4,7 +4,9 @@
   margin: 0;
   padding: 0;
 }
-
+.dropContainer{
+  padding-top: 30px;
+}
 .dropdown .title {
   padding: 10px;
   background-color: rgba(255, 96, 96, 1);
@@ -23,7 +25,7 @@
 
 /* Dropdown content container */
 .dropdown {
-  padding: 0 126px;
+    padding: 0px 30px;
   margin-bottom: 20px;
 }
 
@@ -94,5 +96,8 @@ h1 {
 @media (max-width: 768px) and (min-width: 360px) {
   .dropdown {
     padding: 0 20px !important;
+  }
+  .dropContainer{
+    padding-top: 7px;
   }
 }
