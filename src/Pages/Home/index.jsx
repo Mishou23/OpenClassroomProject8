@@ -6,8 +6,10 @@ import './index.scss';
 export default function Home() {
   return (
     <>
-      <Header showHeaderText={true} showHeaderDiv={true} hideOverlay={true} />
+     <div className='container'>
+     <Header showHeaderText={true} showHeaderDiv={true} hideOverlay={true} />
       <Cards />
+     </div>
       <Footer/>
     </>
   );

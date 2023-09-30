@@ -10,23 +10,6 @@
 
 }
 
-.imageContainer {
-  width: 100%;
-  max-width: 100%;
-  height: 200px; /* Remove fixed height to make it responsive */
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Vertically center the content */
-
-  img {
-    position: relative;
-    object-fit: cover;
-    border-radius: 25px;
-    width: 100%;
-    height: 100%; /* Maintain image aspect ratio */
-    z-index: 1;
-  }
-}
 
 .airbnbName h1 {
   font-size: 36px;
