@@ -2,6 +2,9 @@
 *{
   box-sizing: border-box;
 }
+.airbnb-box{
+  padding: 0 60px;
+}
 .airbnbContainer {
   width: 100%;
   max-width: 100%;
@@ -9,7 +12,6 @@
   padding-bottom: 30px;
 
 }
-
 
 .airbnbName h1 {
   font-size: 36px;

@@ -4,7 +4,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 20px; 
-  padding: 0 60px;
 }
 
 .drop-des,
@@ -69,7 +68,6 @@
 .chevron.rotate {
   transform: rotate(180deg);
 }
-
 .chevron {
   font-size: 23px;
   position: relative;
@@ -91,6 +89,4 @@
     .drop-des, .drop-equip {
       padding: 6px 7px;
     }
-  
-
    }

@@ -18,10 +18,12 @@ export default function CardDetails() {
   }
   return (
     <>
-      <Header showHeaderDiv={false} />
+    <div className='airbnb-box'>
+    <Header showHeaderDiv={false} />
       <Slideshow housingData={housingData} />
       <Airbnb housingData={housingData} />
       <Dropdown housingData={housingData} />
+    </div>
       <Footer />
     </>
   );
