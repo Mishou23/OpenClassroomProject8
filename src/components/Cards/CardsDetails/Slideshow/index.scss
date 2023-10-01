@@ -1,22 +1,24 @@
-
-.slideImage {
+.slideContainer{
   position: relative;
+}
+.slideImage {
   object-fit: cover;
   border-radius: 25px;
   width: 100%;
   height: 415px;
+  overflow: hidden;
 }
 
 /* Styles for the imageControls container */
 .imageControls {
   position: absolute;
   top: 50%;
-  transform: translateY(-19%);
-  left: 34px;
+  left: 0;
   right: 0;
   display: flex;
   justify-content: space-between;
-  width: 94%;
+  align-items: center; 
+  transform: translateY(-50%); 
 }
 
 /* Style for the chevronIcon */
@@ -33,7 +35,7 @@
   position: absolute;
   color: #000000;
   font-size: 18px;
-  bottom: -4px;
+  bottom: 17px;
   left: 0;
   right: 0;
   text-align: center; /* Center the text horizontally */
@@ -44,14 +46,17 @@
 /* Media query for responsiveness */
 @media (max-width: 768px) and (min-width: 320px) {
   .slideContainer {
-    padding-top: 30px;
+    padding-top: 25px;
   }
 
   .imageControls {
+  
     .chevronIcon {
       width: 87px;
+      height: 87px;
     }
-    left: 37px;
-    width: 90%;
+  }
+  .slideNumber{
+    display: none;
   }
 }

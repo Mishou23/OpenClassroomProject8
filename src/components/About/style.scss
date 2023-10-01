@@ -6,6 +6,8 @@
 }
 .dropContainer{
   padding-top: 30px;
+  padding-left: 90px;
+  padding-right: 90px;
 }
 .dropdown .title {
   padding: 10px;
@@ -13,7 +15,7 @@
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   cursor: pointer;
   transition: background-color 0.3s;
   color: white; /* Text color */
@@ -25,21 +27,23 @@
 
 /* Dropdown content container */
 .dropdown {
-    padding: 0px 30px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 /* Dropdown title text */
 h1 {
-  font-size: 24px;
+  font-size: 22px;
   color: white;
+  font-family: 'montserrat';
+  font-weight: 500;
 }
 
 /* Chevron icon */
 .title .chevron {
-  font-size: 23px;
+  font-size: 25px;
   display: flex;
   transition: transform 0.3s ease; /* Smoother transition for chevron */
+  left: -10px;
 }
 
 /* Chevron rotation when the dropdown is open */
@@ -93,11 +97,11 @@ h1 {
 }
 
 //-----------------------------------------------------------------Version Smartphone ---------------------------------------------
-@media (max-width: 768px) and (min-width: 360px) {
-  .dropdown {
-    padding: 0 20px !important;
-  }
+@media (max-width: 768px) and (min-width: 320px) {
+
   .dropContainer{
     padding-top: 7px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
