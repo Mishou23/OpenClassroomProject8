@@ -10,15 +10,15 @@
   padding-right: 90px;
 }
 .dropdown .title {
-  padding: 10px;
+  padding: 10px 17px;
   background-color: rgba(255, 96, 96, 1);
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   cursor: pointer;
   transition: background-color 0.3s;
-  color: white; /* Text color */
+  color: white; 
 }
 
 .dropdown .title:hover {
@@ -43,7 +43,6 @@ h1 {
   font-size: 25px;
   display: flex;
   transition: transform 0.3s ease; /* Smoother transition for chevron */
-  left: -10px;
 }
 
 /* Chevron rotation when the dropdown is open */

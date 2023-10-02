@@ -41,8 +41,10 @@
     display: block;
   }
 
-  .card h3 {
+  .card {
+    h3{
     font-size: 13px;
+    }
   }
 
   .content p {
@@ -69,7 +71,11 @@
   .card-container {
     padding: 0 0px;
   }
-
+  .card {
+    h3{
+    font-size: 16px;
+    }
+  }
   .card img {
     width: 100%;
     height: 45vh;

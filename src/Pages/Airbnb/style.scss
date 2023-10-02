@@ -35,11 +35,12 @@
   gap: 10px;
 
   .name {
-    padding: 5px 30px;
-    background-color: rgba(255, 96, 96, 1);
+    padding: 7px 5px;
+    background-color: rgb(255, 96, 96);
     color: white;
     border-radius: 10px;
-    font-size: 14px;
+    white-space: nowrap;
+    font-size: 11px;
     font-family: 'montserrat';
   }
 }
@@ -86,6 +87,8 @@
 
   .airbnbContainer {
     padding-bottom: 0px;
+    padding-top: 7px;
+    padding-left: 3px;
   }
  .airbnbContent{
   flex-direction: column;
@@ -95,18 +98,48 @@
   font-size: 20px;
   }
 }
+.location {
+  p {
+  font-size: 14px;
+  }
+}
  .pseudo{
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: baseline;
-  padding-top: 30px;
+  padding-top: 20px;
  }
+ .tags {
+  padding-top: 10px;
+  .name {
+    padding: 5px 6px;
+    background-color: rgb(255, 96, 96);
+    color: white;
+    border-radius: 7px;
+    white-space: nowrap;
+    font-size: 11px;
+  }
+ }
+
  .identity {
   display: flex;
   gap: 10px;
+
+  .name  {
+    p {
+    font-size: 12px;
+    }
+  }
 }
-.tags{
-flex-wrap: wrap;
+.photo {
+  img {
+  width: 37px;
+  }
 }
+
+.ratings{
+  font-size: 12px;
+}
+
  }
