@@ -75,6 +75,7 @@
 }
 .star-rating {
   display: flex;
+  justify-content: end;
 }
 .star{
   margin-right: 5px;
