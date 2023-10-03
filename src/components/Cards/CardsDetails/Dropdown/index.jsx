@@ -17,7 +17,6 @@ export default function Dropdown({ housingData }) {
             onClick={() => {
               setShowDescription(!showDescription);
               setRotateChevronDescription(!rotateChevronDescription); // Toggle rotation
-              setRotateChevronEquipments(false); // Reset the other chevron
             }}
           >
             <h3>Description</h3>
@@ -42,7 +41,6 @@ export default function Dropdown({ housingData }) {
             onClick={() => {
               setShowEquipments(!showEquipments);
               setRotateChevronEquipments(!rotateChevronEquipments); // Toggle rotation
-              setRotateChevronDescription(false); // Reset the other chevron
             }}
           >
             <h3>Équipements</h3>
