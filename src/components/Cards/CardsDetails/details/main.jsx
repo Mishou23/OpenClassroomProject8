@@ -26,8 +26,8 @@ export default function Details({ housingData }) {
   console.log("Housing Data in Airbnb:", housingData);
 
   return (
-    <div>
-      <div className="main-container">
+    <main>
+      <section className="main-container">
         <div className="airbnbContainer">
           <div className="airbnbContent">
             <div className="contents">
@@ -66,7 +66,7 @@ export default function Details({ housingData }) {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }

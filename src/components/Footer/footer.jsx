@@ -2,7 +2,7 @@ import logoWhite from "../../../images/LOGO_white.png";
 import "./style.scss";
 export default function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="content">
         <div className="logo-white">
           <img src={logoWhite} alt="Logo" />
@@ -11,6 +11,6 @@ export default function Footer() {
           <p>&copy; 2020 Kasa. All rights reserved</p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

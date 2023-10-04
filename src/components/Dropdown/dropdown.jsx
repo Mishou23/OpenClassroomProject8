@@ -5,7 +5,7 @@ export default function Dropdown({ title, content }) {
   const [rotateChevron, setRotateChevron] = useState(false);
 
   return (
-    <div className="Dropdown">
+    <section className="Dropdown">
       <div className="drop-title">
         <div
           className={`headline ${showDropdown ? "active" : ""} `}
@@ -30,6 +30,6 @@ export default function Dropdown({ title, content }) {
       <div className={`drop-content ${showDropdown ? "active" : ""}`}>
         {content}
       </div>
-    </div>
+    </section>
   );
 }

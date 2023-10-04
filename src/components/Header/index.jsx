@@ -7,7 +7,7 @@ import defaultImgSrc from "../../../images/IMG.png"; // Default image
 export default function Header(props) {
   const imgSrc = props.imgSrc || defaultImgSrc; // Use default if imgSrc prop is not provided
   return (
-    <div>
+    <nav>
       <div className="navbar">
         <div className="logo">
           <img src={logoSrc} alt="Logo" className="logo-img" />
@@ -26,7 +26,7 @@ export default function Header(props) {
         </ul>
       </div>
       {props.showHeaderDiv && (
-        <div className="header">
+        <section className="header">
           <div className="imageContainer">
             {props.showHeaderText && (
               <h1 className="header-text">Chez vous, partout et ailleurs</h1>
@@ -34,8 +34,8 @@ export default function Header(props) {
             {props.hideOverlay && <div className="imageOverlay"></div>}
             <img src={imgSrc} alt="Image Description" className="header-img" />
           </div>
-        </div>
+        </section>
       )}
-    </div>
+    </nav>
   );
 }

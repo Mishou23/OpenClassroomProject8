@@ -25,7 +25,7 @@ export default function Slideshow({ housingData }) {
   const showChevrons = housingData && housingData.pictures.length > 1;
 
   return (
-    <div className="slideContainer">
+    <section className="slideContainer">
       <img
         src={housingData ? housingData.pictures[currentImageIndex] : ""}
         alt="Image Description"
@@ -58,6 +58,6 @@ export default function Slideshow({ housingData }) {
           {currentImageIndex + 1}/{housingData.pictures.length}
         </div>
       )}
-    </div>
+    </section>
   );
 }

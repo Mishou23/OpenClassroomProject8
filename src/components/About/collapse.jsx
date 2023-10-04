@@ -58,14 +58,14 @@ export default function Collapse() {
   ];
 
   return (
-    <div className="dropContainer">
+    <main className="dropContainer">
       {dropdownData.map((dropdown, index) => (
-        <div className="collapse" key={index}>
+        <article className="collapse" key={index}>
           <div>
             <Dropdown title={dropdown.title} content={dropdown.content} />
           </div>
-        </div>
+        </article>
       ))}
-    </div>
+    </main>
   );
 }

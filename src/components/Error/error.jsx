@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import "./error.scss";
 const ErrorPage = () => {
   return (
-    <div className="errorContainer">
-      <div className="message">
+    <main className="errorContainer">
+      <section className="message">
         <h1> 404</h1>
-      </div>
+      </section>
       <div className="description">
         <p>Oups! La page que vous demandez n'existe pas.</p>
       </div>
@@ -14,7 +14,7 @@ const ErrorPage = () => {
           Retourner sur la page d’accueil
         </Link>
       </div>
-    </div>
+    </main>
   );
 };
 
