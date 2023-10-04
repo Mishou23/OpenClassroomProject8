@@ -5,7 +5,7 @@ $font-family_1: "montserrat";
 $background-color_1: rgba(0, 0, 0, 0.3);
 
 /* --------------------------------------------------Version Smartphone ----------------------------------------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -93,19 +93,18 @@ ul {
 }
 // ------------------------------------------------------------Version Tablette -------------------------------------------------------------------------------------------------------------------------------
 @media (max-width: 1025px) and (min-width: 768px) {
-
-  .imageContainer  {
-    h1{
-    font-size: 38px;}
+  .imageContainer {
+    h1 {
+      font-size: 38px;
+    }
   }
 }
-
 
 // ------------------------------------------------------------Version Smartphone -----------------------------------------------------------------------------------------------------------------------------
 @media (max-width: 768px) and (min-width: 320px) {
   .navbar {
-     padding-bottom: 0px;
-    }
+    padding-bottom: 0px;
+  }
   .nav-link {
     font-size: 12px;
     white-space: nowrap;
@@ -117,17 +116,17 @@ ul {
   .header {
     padding: 22px 0px;
   }
-  .imageOverlay{
+  .imageOverlay {
     border-radius: 10px;
   }
   .imageContainer {
-    height: 111px !important; 
+    height: 111px !important;
     h1 {
       position: absolute;
       font-size: 21px;
       padding-left: 15px;
     }
-    img{
+    img {
       border-radius: 10px;
     }
   }

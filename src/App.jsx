@@ -1,9 +1,9 @@
-import './App.scss';
-import Home from './Pages/Home/index';
-import About from './Pages/About/index';
-import AirBnb from './Pages/Airbnb/airbnb'
-import Error from './Pages/ErrorPage/index'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import "./App.scss";
+import Home from "./Pages/Home/index";
+import About from "./Pages/About/index";
+import Card from "./Pages/CardDetails/card";
+import Error from "./Pages/ErrorPage/index";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -12,7 +12,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/details/:id" element={<AirBnb />} /> 
+          <Route path="/details/:id" element={<Card />} />
+          <Route path="/error" element={<Error /> } />
           <Route path="*" element={<Error />} />
         </Routes>
       </div>

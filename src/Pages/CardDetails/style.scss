@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+.airbnb-box {
+  padding: 0 60px;
+}
+.airbnbContainer {
+  width: 100%;
+  max-width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.airbnbName h1 {
+  font-size: 36px;
+  color: rgba(255, 96, 96, 1);
+  font-family: "montserrat";
+  font-weight: 500;
+}
+
+.location p {
+  font-size: 18px;
+  font-family: "montserrat";
+  color: rgba(255, 96, 96, 1);
+  padding-top: 5px;
+  font-weight: 500;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  gap: 10px;
+
+  .name {
+    padding: 6px 30px;
+    background-color: rgb(255, 96, 96);
+    color: white;
+    border-radius: 11px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: "montserrat";
+  }
+}
+
+.airbnbContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.identity {
+  display: flex;
+  gap: 10px;
+}
+
+.photo {
+  position: relative;
+  top: -6px;
+
+  img {
+    border-radius: 50%;
+    width: 50px;
+  }
+}
+
+.identity .name p {
+  color: rgba(255, 96, 96, 1);
+  font-size: 18px;
+  font-family: "montserrat";
+  font-weight: 500;
+  padding-top: 2px;
+}
+.star-rating {
+  display: flex;
+  justify-content: end;
+}
+.star {
+  margin-right: 5px;
+}
+/* --------------------------------------------------Version Smartphone ----------------------------------------------------------------------------------------------- */
+@media (max-width: 768px) and (min-width: 320px) {
+  .airbnb-box {
+    padding: 0 18px;
+  }
+
+  .airbnbContainer {
+    padding-bottom: 0px;
+    padding-top: 7px;
+    padding-left: 3px;
+  }
+  .airbnbContent {
+    flex-direction: column;
+  }
+  .airbnbName {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  .location {
+    p {
+      font-size: 14px;
+    }
+  }
+  .pseudo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 20px;
+  }
+  .tags {
+    padding-top: 10px;
+    flex-wrap: wrap;
+    .name {
+      padding: 5px 6px;
+      background-color: rgb(255, 96, 96);
+      color: white;
+      border-radius: 7px;
+      white-space: nowrap;
+      font-size: 11px;
+    }
+  }
+
+  .identity {
+    display: flex;
+    gap: 10px;
+
+    .name {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+  .photo {
+    img {
+      width: 37px;
+    }
+  }
+
+  .ratings {
+    font-size: 12px;
+  }
+}

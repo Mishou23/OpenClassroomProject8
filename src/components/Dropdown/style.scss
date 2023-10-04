@@ -1,0 +1,82 @@
+/* Dropdown.module.scss */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+.Dropdowns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.drop-title {
+  padding: 10px 10px;
+  background-color: rgba(255, 96, 96, 1);
+  color: white;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: "montserrat";
+  display: inline-block;
+  width: 100%;
+}
+
+.headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 98%;
+  h3 {
+    font-weight: 500;
+  }
+}
+
+.drop-content {
+  color: rgba(255, 96, 96, 1);
+}
+
+.drop-content {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  background-color: rgba(246, 246, 246, 1);
+  padding-left: 15px;
+  padding-top: 0;
+  transition: max-height 0.3s ease-in-out,
+    /* Smooth height transition */ opacity 0.3s ease-in-out,
+    padding-top 0.3s ease-in-out;
+}
+
+.drop-content.active {
+  max-height: 100%;
+  height: 166px;
+  opacity: 1;
+  padding-top: 20px;
+}
+
+.name {
+  padding-bottom: 5px;
+}
+
+.chevron.rotate {
+  transform: rotate(180deg);
+}
+
+.chevron {
+  font-size: 23px;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+/* --------------------------------------------------Version Smartphone ----------------------------------------------------------------------------------------------- */
+@media (max-width: 768px) and (min-width: 320px) {
+  .slideContainer .imageControls {
+    left: -2px;
+    width: 100%;
+  }
+  .Dropdowns {
+    padding-bottom: 15px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .drop-title {
+    padding: 6px 7px;
+  }
+}

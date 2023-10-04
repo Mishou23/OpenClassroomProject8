@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -19,7 +19,7 @@
     h1 {
       font-size: 288px;
       color: rgba(255, 96, 96, 1);
-      font-family: 'montserrat';
+      font-family: "montserrat";
       font-weight: 700;
     }
   }
@@ -29,7 +29,7 @@
       text-align: center;
       font-size: 36px;
       color: rgba(255, 96, 96, 1);
-      font-family: 'montserrat';
+      font-family: "montserrat";
       line-height: 30px;
       padding-top: 50px;
       font-weight: 500;
@@ -42,26 +42,26 @@
     .homepage {
       font-size: 18px;
       color: rgba(255, 96, 96, 1);
-      font-family: 'montserrat';
+      font-family: "montserrat";
     }
   }
 }
 // ------------------------------------------------------------Version Smartphone -----------------------------------------------------------------------------------------------------------------------------
 @media (max-width: 768px) and (min-width: 320px) {
-  .errorContainer{
+  .errorContainer {
     padding-top: 50px;
   }
   .errorContainer .message {
-    h1{
-    font-size: 155px;
-}
+    h1 {
+      font-size: 155px;
+    }
   }
   .errorContainer .description {
-    p{
-    font-size: 18px;
+    p {
+      font-size: 18px;
+    }
   }
-}
-.errorContainer .home .homepage {
-  font-size: 14px;
-}
+  .errorContainer .home .homepage {
+    font-size: 14px;
+  }
 }

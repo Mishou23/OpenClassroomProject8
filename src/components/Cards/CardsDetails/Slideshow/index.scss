@@ -1,4 +1,4 @@
-.slideContainer{
+.slideContainer {
   position: relative;
 }
 .slideImage {
@@ -17,8 +17,8 @@
   right: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
-  transform: translateY(-50%); 
+  align-items: center;
+  transform: translateY(-50%);
 }
 
 /* Style for the chevronIcon */
@@ -39,9 +39,8 @@
   left: 0;
   right: 0;
   text-align: center; /* Center the text horizontally */
-  color: white; 
+  color: white;
 }
-
 
 /* Media query for responsiveness */
 @media (max-width: 768px) and (min-width: 320px) {
@@ -50,13 +49,12 @@
   }
 
   .imageControls {
-  
     .chevronIcon {
       width: 87px;
       height: 87px;
     }
   }
-  .slideNumber{
+  .slideNumber {
     display: none;
   }
 }
