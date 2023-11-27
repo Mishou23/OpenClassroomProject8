@@ -1,4 +1,3 @@
-import "./App.scss";
 import Home from "./Pages/Home/index";
 import About from "./Pages/About/index";
 import Card from "./Pages/CardDetails/card";
